@@ -65,3 +65,65 @@ linear-gradient(120deg,#151114 0%,#252025 42%,#110d12 72%,#22151e 100%);filter:s
 .interactive-compare{height:510px;border-radius:22px}.before-label,.after-label{top:16px}.before-label{left:16px}.after-label{right:16px}
 .reviews{padding-top:50px}.reviews h2{font-size:49px}.reviews-track article{width:320px}.faq{padding-top:105px;gap:42px}
 }
+
+
+/* Compact, minimal and more alive — content only */
+.hero{min-height:640px;padding:145px 24px 75px}
+.hero-content{width:min(760px,100%)}
+.hero-kicker{margin-bottom:20px;font-size:9px}
+.hero h1{font-size:clamp(48px,6.8vw,88px);line-height:.94;max-width:780px}
+.hero-content>p{max-width:500px;margin:24px 0 0;font-size:15px;line-height:1.7}
+.hero-actions{margin-top:26px}
+.primary-cta{min-width:0;padding:14px 21px;font-size:12px}
+
+.hero-backdrop{background:
+radial-gradient(circle at 72% 42%,rgba(255,79,163,.20),transparent 18%),
+radial-gradient(circle at 25% 72%,rgba(255,255,255,.045),transparent 20%),
+linear-gradient(100deg,rgba(8,8,11,.98),rgba(16,12,17,.80) 55%,rgba(8,8,11,.96)),
+linear-gradient(120deg,#141015,#251923 48%,#100d12)}
+.hero-backdrop:after{content:'';position:absolute;width:380px;height:380px;right:8%;bottom:-180px;border:1px solid rgba(255,79,163,.13);border-radius:50%;box-shadow:0 0 80px rgba(255,79,163,.07);animation:floatSoft 8s ease-in-out infinite}
+@keyframes floatSoft{50%{transform:translateY(-18px) scale(1.04)}}
+
+.section{padding:105px 0}
+.compare-section{padding-top:110px}
+.compare-copy{gap:45px;margin-bottom:35px}
+.compare-copy h2{font-size:clamp(38px,5vw,66px);line-height:.98}
+.compare-copy p{font-size:13px;max-width:360px}
+.interactive-compare{height:min(54vw,530px);min-height:360px;border-radius:20px}
+.compare-handle{width:48px;height:48px}
+.before-label,.after-label{padding:8px 12px;font-size:8px}
+
+.reviews{padding-top:50px}
+.reviews h2{font-size:clamp(36px,4.5vw,60px);line-height:1}
+.reviews-track{margin-top:38px}
+.reviews-track article{width:330px;min-height:165px;padding:24px;border-radius:18px;font-size:13px}
+.reviews-track article:hover{transform:translateY(-4px);border-color:rgba(255,79,163,.38)}
+
+.faq{padding-top:110px;gap:75px}
+.faq h2{font-size:clamp(38px,4.8vw,64px)}
+.faq-list details{padding:21px 0}
+.faq-list summary{font-size:15px}
+
+.footer-top{padding:55px 0 45px}
+.footer-word{font-size:12vw}
+
+/* More subtle visual life without making the page busy */
+.compare-section:before{content:'';position:absolute;left:50%;width:1px;height:90px;background:linear-gradient(transparent,rgba(255,79,163,.5),transparent);transform:translate(-50%,-120px)}
+.compare-section{position:relative}
+.reviews-track article{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(15,15,18,.82) 45%,rgba(255,79,163,.035));transition:transform .35s ease,border-color .35s ease}
+.eyebrow{color:#ff73b6}
+.primary-cta{box-shadow:0 10px 35px rgba(255,79,163,.14)}
+.primary-cta:hover{box-shadow:0 16px 45px rgba(255,79,163,.24)}
+
+@media(max-width:700px){
+.hero{min-height:600px;padding:125px 24px 65px}
+.hero h1{font-size:clamp(44px,12vw,64px)}
+.hero-content>p{font-size:14px}
+.section,.compare-section{padding:82px 0}
+.compare-copy h2{font-size:42px}
+.interactive-compare{height:430px;min-height:0}
+.reviews h2{font-size:40px}
+.reviews-track article{width:290px}
+.faq{padding-top:85px;gap:35px}
+.faq h2{font-size:42px}
+}
