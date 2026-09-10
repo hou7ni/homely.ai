@@ -196,3 +196,81 @@ linear-gradient(120deg,#141015,#251923 48%,#100d12)}
 .final-inner p{font-size:14px;padding:0 10px}
 .final-button{width:100%;padding:18px}
 }
+
+
+/* Homely polish v2 — tighter hierarchy, richer comparison, more visual life */
+.hero{min-height:760px}
+.hero-content{padding-top:54px}
+.hero h1{font-size:clamp(56px,7.4vw,98px)}
+.hero-kicker{color:#c4c0c5;letter-spacing:.24em}
+.hero-proof{margin-top:34px;max-width:490px;padding:10px 15px}
+.hero-proof p{font-size:12px}
+.hero-description{max-width:580px!important;font-size:clamp(15px,1.8vw,19px)!important}
+.hero-scroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:inline-flex;align-items:center;gap:10px;color:#77727a;text-decoration:none;text-transform:uppercase;letter-spacing:.15em;font-size:8px;font-weight:800;transition:color .25s}
+.hero-scroll span{width:28px;height:42px;border:1px solid rgba(255,255,255,.18);border-radius:99px;position:relative}
+.hero-scroll span:after{content:'';position:absolute;width:4px;height:4px;border-radius:50%;left:50%;top:9px;transform:translateX(-50%);background:#ff4fa3;box-shadow:0 0 12px #ff4fa3;animation:scrollDot 2s ease-in-out infinite}
+.hero-scroll:hover{color:#ff8bc4}
+@keyframes scrollDot{50%{transform:translate(-50%,13px);opacity:.35}}
+
+.compare-section{padding-top:125px;padding-bottom:105px}
+.compare-copy .eyebrow{display:inline-flex;align-items:center;gap:10px}
+.compare-copy .eyebrow:before,.compare-copy .eyebrow:after{content:'';width:22px;height:1px;background:rgba(255,79,163,.55)}
+.compare-copy h2{letter-spacing:-.065em}
+.compare-stack{max-width:960px}
+.compare-stack .interactive-compare{height:min(63vw,670px);min-height:500px}
+.interactive-compare{border-radius:30px}
+.interactive-compare:before{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.025),inset 0 -100px 90px rgba(0,0,0,.12)}
+.room-scene{background-color:#222}
+.room-scene:before{content:'';position:absolute;left:0;right:0;top:55%;height:1px;background:rgba(255,255,255,.08)}
+.room-scene .wall-art{position:absolute;left:54%;top:16%;width:15%;height:22%;border:7px solid rgba(255,255,255,.16);background:linear-gradient(145deg,#d8a6af,#826e74 48%,#2d272b)}
+.before-scene .wall-art{filter:grayscale(1);opacity:.5}
+.room-scene .rug{position:absolute;left:20%;bottom:5%;width:58%;height:13%;border-radius:50%;background:rgba(241,213,210,.55);filter:blur(1px)}
+.before-scene .rug{background:rgba(60,56,59,.7)}
+.room-scene .plant{filter:drop-shadow(0 18px 12px rgba(0,0,0,.18))}
+.compare-handle{font-size:0;overflow:visible}
+.compare-handle:before,.compare-handle:after{content:'';position:absolute;width:9px;height:9px;border-top:2px solid currentColor;border-left:2px solid currentColor}
+.compare-handle:before{transform:rotate(-45deg);left:15px}
+.compare-handle:after{transform:rotate(135deg);right:15px}
+.compare-hint{display:flex;align-items:center;justify-content:center;gap:12px;padding-top:20px;color:#77727a}
+.compare-hint p{margin:0;font-size:11px}
+.hint-icon{width:25px;height:25px;border:1px solid rgba(255,79,163,.24);border-radius:50%;display:grid;place-items:center;color:#ff73b6;font-size:12px}
+.hint-line{width:46px;height:1px;background:linear-gradient(90deg,#ff4fa3,transparent)}
+
+.reviews{position:relative;padding-top:115px}
+.reviews:before{content:'';position:absolute;left:50%;top:0;width:min(680px,70vw);height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent)}
+.reviews-intro{max-width:410px;margin:22px auto 0;color:#88838a;font-size:13px;line-height:1.7}
+.reviews-track{margin-top:45px;gap:18px}
+.reviews-track article{position:relative;width:350px;min-height:190px;padding:25px 27px 23px}
+.reviews-track article p{margin:26px 0 24px;font-size:14px;line-height:1.7;color:#d0ccd1}
+.review-number{position:absolute;right:24px;top:20px;color:rgba(255,79,163,.5);font-size:10px;letter-spacing:.12em;font-weight:800}
+.reviews-track article b{margin:0;font-size:9px}
+
+.faq{padding-top:125px}
+.faq-list details[open] summary b{transform:rotate(45deg);background:rgba(255,79,163,.08);border-color:rgba(255,79,163,.35)}
+.faq-list summary b{transition:transform .25s,background .25s,border-color .25s}
+.faq-list details{transition:padding .25s}
+.faq-list details:hover{padding-left:8px}
+.final-homely{padding:135px 0 150px}
+.final-inner .eyebrow{display:flex;justify-content:center;align-items:center;gap:10px}
+.final-inner .eyebrow:before,.final-inner .eyebrow:after{content:'';width:24px;height:1px;background:rgba(255,79,163,.5)}
+.final-inner h2{font-size:clamp(50px,6.2vw,86px)}
+.final-button{min-width:250px}
+
+@media(max-width:700px){
+.hero{min-height:700px}
+.hero-content{padding-top:65px}
+.hero h1{font-size:clamp(52px,14vw,72px)}
+.hero-proof{margin-top:27px}
+.hero-description{font-size:16px!important}
+.hero-scroll{bottom:20px}
+.hero-scroll span{width:24px;height:36px}
+.compare-section{padding-top:90px;padding-bottom:78px}
+.compare-stack .interactive-compare{height:500px;min-height:0}
+.room-scene .wall-art{border-width:4px}
+.compare-hint{padding:15px 10px 0}
+.compare-hint p{font-size:10px}
+.reviews{padding-top:88px}
+.reviews-track article{width:295px;min-height:175px}
+.faq{padding-top:95px}
+.final-homely{padding:105px 0 120px}
+}
