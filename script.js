@@ -4,3 +4,8 @@ document.querySelectorAll('.faq-list details').forEach(d=>{const icon=d.querySel
 const items=document.querySelectorAll('.reveal');
 if(reduce){items.forEach(x=>x.classList.add('visible'))}else{const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}}),{threshold:.12});items.forEach(x=>o.observe(x))}
 const menu=document.querySelector('.menu-btn'),links=document.querySelector('.nav-links');menu?.addEventListener('click',()=>links?.classList.toggle('open'));
+const compareRange=document.querySelector('.compare-range');
+const compareBefore=document.querySelector('.compare-before');
+const compareHandle=document.querySelector('.compare-handle');
+function updateCompare(value){if(compareBefore)compareBefore.style.width=value+'%';if(compareHandle)compareHandle.style.left=value+'%'}
+if(compareRange){updateCompare(compareRange.value);compareRange.addEventListener('input',e=>updateCompare(e.target.value))}
