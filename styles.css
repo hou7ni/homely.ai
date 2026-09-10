@@ -12,3 +12,10 @@
 .room-6{background-image:url('https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=900&q=85')!important}
 .visual-wall{opacity:.68}
 .wall-overlay{background:radial-gradient(circle at center,rgba(8,8,10,.96) 0 22%,rgba(8,8,10,.28) 56%,rgba(8,8,10,.78) 100%),linear-gradient(180deg,rgba(0,0,0,.24),rgba(0,0,0,.6))}
+
+
+/* Stronger visibility for animated interior photos */
+.visual-wall{opacity:.88}
+.photo-card{filter:brightness(.78) saturate(1.05) contrast(1.02)!important}
+.photo-card:after{background:linear-gradient(180deg,rgba(5,5,8,.02),rgba(5,5,8,.22)),linear-gradient(135deg,rgba(239,77,141,.025),transparent 55%)!important}
+.wall-overlay{background:radial-gradient(circle at center,rgba(8,8,10,.82) 0 20%,rgba(8,8,10,.12) 55%,rgba(8,8,10,.52) 100%),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.32))}
