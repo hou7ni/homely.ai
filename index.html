@@ -3,58 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Homely — visualise et imagine ton intérieur autrement.">
-<title>Homely — Design Intelligence for Your Space</title>
+<meta name="description" content="Homely — imagine une nouvelle version de ton intérieur.">
+<title>Homely — Imagine ton intérieur autrement</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="background"><div class="stars stars-a"></div><div class="stars stars-b"></div><div class="orb"></div><div class="grid"></div></div>
-<header class="site-header"><nav class="nav"><a class="logo" href="#"><span class="logo-mark"></span><span>homely</span></a><div class="nav-links"><a href="#compare">Avant / Après</a><a href="#reviews">Avis</a><a href="#faq">FAQ</a></div><div class="nav-actions"><a class="login" href="https://apphomely.vercel.app/">Connexion</a><a class="access" href="https://apphomely.vercel.app/"><span>Commencer</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></nav></header>
+<div class="background"><div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="grain"></div></div>
+
+<header class="site-header">
+<nav class="nav">
+<a class="logo" href="#"><span class="logo-mark"></span><span>homely</span></a>
+<div class="nav-links"><a href="#compare">Avant / Après</a><a href="#reviews">Avis</a><a href="#faq">FAQ</a></div>
+<div class="nav-actions"><a class="login" href="https://apphomely.vercel.app/">Connexion</a><a class="access" href="https://apphomely.vercel.app/"><span>Commencer</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</nav>
+</header>
 
 <main>
 <section class="hero">
-  <div class="hero-mosaic" aria-hidden="true">
-    <div class="mosaic-tile tile-a"></div><div class="mosaic-tile tile-b"></div><div class="mosaic-tile tile-c"></div>
-    <div class="mosaic-tile tile-d"></div><div class="mosaic-tile tile-e"></div><div class="mosaic-tile tile-f"></div>
-    <div class="mosaic-tile tile-g"></div><div class="mosaic-tile tile-h"></div>
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="hero-float hero-float-left" aria-hidden="true"><span class="float-dot"></span><small>TON ESPACE</small><b>01</b></div>
-  <div class="hero-float hero-float-right" aria-hidden="true"><small>NOUVELLE VISION</small><span class="float-arrow">↗</span></div>
-  <div class="hero-content">
-    <div class="hero-kicker reveal">UNE PHOTO · UNE NOUVELLE DIRECTION</div>
-    <h1 class="reveal">VOIS TON ESPACE.<br><span>AUTREMENT.</span></h1>
-    <div class="hero-proof reveal"><div class="proof-avatars"><i></i><i></i><i></i><i></i></div><p>Pars de ton intérieur. <b>Imagine la suite.</b></p></div>
-    <p class="hero-description reveal">Envoie une photo de ton espace, décris ce que tu veux changer et découvre une nouvelle ambiance en quelques instants.</p>
-    <div class="hero-actions reveal"><a class="primary-cta" href="https://apphomely.vercel.app/">Commencer maintenant <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  </div>
-  <a class="hero-scroll" href="#compare" aria-label="Découvrir la transformation"><span></span>Découvrir</a>
+<div class="hero-stage">
+<div class="hero-side side-left"><span>HOMELY / 01</span><i></i></div>
+<div class="hero-side side-right"><span>TON ESPACE</span><i></i></div>
+<div class="hero-copy">
+<div class="hero-kicker reveal"><span></span> VISUALISE UNE AUTRE DIRECTION</div>
+<h1 class="reveal">L'INTÉRIEUR<br><em>QUE TU IMAGINES.</em></h1>
+<p class="reveal">Pars de ton espace actuel. Décris ce que tu veux changer. Homely transforme ton idée en une nouvelle vision.</p>
+<a class="primary-cta reveal" href="https://apphomely.vercel.app/">Commencer maintenant <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+
+<div class="visual-wall reveal">
+<div class="wall-column col-a"><div class="photo-card room-1"></div><div class="photo-card room-2"></div></div>
+<div class="wall-column col-b"><div class="photo-card room-3"><div class="card-caption">UNE NOUVELLE<br>VISION</div></div><div class="photo-card room-4"></div></div>
+<div class="wall-column col-c"><div class="photo-card room-5"></div><div class="photo-card room-6"></div></div>
+<div class="wall-overlay"></div>
+<div class="hero-floating-card"><div class="mini-avatars"><i></i><i></i><i></i></div><b>Ton intérieur.<br><span>Une nouvelle idée.</span></b></div>
+</div>
+</div>
+<a class="hero-scroll" href="#compare"><span></span> Découvrir</a>
+</section>
+
+<section class="statement reveal">
+<div class="statement-line"></div>
+<p>UNE PHOTO <span>→</span> UNE IDÉE <span>→</span> UNE NOUVELLE VISION</p>
+<div class="statement-line"></div>
 </section>
 
 <section class="compare-section container section" id="compare">
-  <div class="compare-copy reveal"><div class="eyebrow">AVANT / APRÈS</div><h2>GLISSE POUR<br><span>RÉVÉLER LE CHANGEMENT.</span></h2><p>Découvre une nouvelle version de ton espace en déplaçant simplement le curseur.</p></div>
-  <div class="compare-stack">
-    <div class="interactive-compare reveal"><div class="compare-after"><div class="room-scene after-scene"><div class="window"></div><div class="wall-art"></div><div class="rug"></div><div class="sofa"></div><div class="plant"></div><div class="lamp"></div></div></div><div class="compare-before"><div class="room-scene before-scene"><div class="window"></div><div class="wall-art"></div><div class="rug"></div><div class="sofa"></div><div class="plant"></div><div class="lamp"></div></div></div><input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Comparer avant et après"><span class="compare-handle">↔</span><label class="before-label">AVANT</label><label class="after-label">APRÈS IA</label></div>
-    <div class="compare-hint reveal"><span class="hint-icon">↔</span><p>Déplace le curseur pour comparer les deux versions de ton espace.</p><span class="hint-line"></span></div>
-    <div class="compare-details reveal"><div><span>01</span><b>TON POINT DE DÉPART</b><p>Pars de l'espace que tu veux transformer.</p></div><i></i><div><span>02</span><b>UNE NOUVELLE DIRECTION</b><p>Explore visuellement une autre ambiance.</p></div></div>
-  </div>
-</section><section class="reviews section" id="reviews"><div class="container center reveal"><div class="eyebrow">AVIS</div><h2>UN AUTRE REGARD<br><span>SUR SON INTÉRIEUR.</span></h2><p class="reviews-intro">Une expérience visuelle pensée pour t'aider à rendre une idée plus concrète.</p></div><div class="reviews-track"><article><span class="review-number">01</span><p>« Je peux enfin visualiser une direction avant de changer quoi que ce soit. »</p><b>VISUALISER</b></article><article><span class="review-number">02</span><p>« Comparer plusieurs idées rend le choix beaucoup plus simple. »</p><b>COMPARER</b></article><article><span class="review-number">03</span><p>« Partir de mon propre espace change complètement la façon d'imaginer le résultat. »</p><b>PERSONNALISER</b></article><article><span class="review-number">01</span><p>« Je peux enfin visualiser une direction avant de changer quoi que ce soit. »</p><b>VISUALISER</b></article><article><span class="review-number">02</span><p>« Comparer plusieurs idées rend le choix beaucoup plus simple. »</p><b>COMPARER</b></article></div></section><section class="faq container section" id="faq"><div class="reveal"><div class="eyebrow">FAQ</div><h2>Les réponses.<br><span>Simplement.</span></h2></div><div class="faq-list reveal"><details open><summary>Comment fonctionne Homely ? <b>+</b></summary><p>Tu pars d'une photo de ton espace et explores différentes directions pour rendre tes idées plus concrètes.</p></details><details><summary>Puis-je explorer plusieurs styles ? <b>+</b></summary><p>Oui. Tu peux comparer plusieurs directions et garder celles qui correspondent à ton projet.</p></details><details><summary>Homely fonctionne-t-il sur mobile ? <b>+</b></summary><p>Oui, l'expérience est pensée pour fonctionner aussi bien sur téléphone que sur ordinateur.</p></details></div></section>
+<div class="compare-head reveal">
+<div><div class="eyebrow">AVANT / APRÈS</div><h2>CHANGE DE<br><span>POINT DE VUE.</span></h2></div>
+<p>Déplace le curseur et découvre comment une même pièce peut prendre une toute nouvelle direction.</p>
+</div>
 
-<section class="final-homely section reveal">
-  <div class="final-glow"></div>
-  <div class="final-inner container">
-    <div class="eyebrow">TON ESPACE · TA VISION</div>
-    <h2>PRÊT À VOIR<br><span>CE QUE ÇA DONNE ?</span></h2>
-    <p>Commence avec ton espace et imagine une nouvelle direction en quelques étapes.</p>
-    <a class="final-button" href="https://apphomely.vercel.app/">Commencer maintenant <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  </div>
+<div class="interactive-compare reveal">
+<div class="compare-after">
+<div class="room-scene after-scene">
+<div class="ceiling-glow"></div><div class="after-window"></div><div class="after-art"></div><div class="after-shelf"></div><div class="after-sofa"></div><div class="after-table"></div><div class="after-rug"></div><div class="after-plant"></div>
+</div>
+</div>
+<div class="compare-before">
+<div class="room-scene before-scene">
+<div class="old-window"></div><div class="old-frame"></div><div class="old-sofa"></div><div class="old-table"></div><div class="old-rug"></div><div class="old-box"></div>
+</div>
+</div>
+<input class="compare-range" type="range" min="0" max="100" value="48" aria-label="Comparer avant et après">
+<span class="compare-handle"><svg viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></span>
+<label class="before-label">AVANT</label><label class="after-label">APRÈS IA</label>
+<div class="compare-count">01 <span>/ 01</span></div>
+</div>
+<div class="compare-foot reveal"><span class="drag-mark">↔</span><p>Glisse le curseur pour révéler la transformation.</p><span>HOMELY / VISUAL</span></div>
 </section>
 
+<section class="process section">
+<div class="container process-inner">
+<div class="process-intro reveal"><div class="eyebrow">SIMPLEMENT</div><h2>TON ESPACE<br><span>RESTE LE POINT<br>DE DÉPART.</span></h2></div>
+<div class="process-list">
+<article class="reveal"><span>01</span><div><b>ENVOIE TON ESPACE</b><p>Pars d'une photo de la pièce que tu veux repenser.</p></div><i>↗</i></article>
+<article class="reveal"><span>02</span><div><b>EXPRIME TON IDÉE</b><p>Décris simplement l'ambiance ou les changements que tu imagines.</p></div><i>↗</i></article>
+<article class="reveal"><span>03</span><div><b>DÉCOUVRE UNE VISION</b><p>Visualise une nouvelle direction directement à partir de ton intérieur.</p></div><i>↗</i></article>
+</div>
+</div>
+</section>
+
+<section class="reviews section" id="reviews">
+<div class="container reviews-top reveal"><div class="eyebrow">AVIS</div><h2>QUAND L'IDÉE<br><span>DEVIENT PLUS CLAIRE.</span></h2></div>
+<div class="reviews-track">
+<article><span>01</span><p>« Je visualise enfin ce que j'avais en tête avant de changer quoi que ce soit. »</p><b>VISUALISER</b></article>
+<article><span>02</span><p>« Voir mon propre espace dans une autre ambiance change complètement la réflexion. »</p><b>IMAGINER</b></article>
+<article><span>03</span><p>« C'est beaucoup plus simple de choisir une direction quand on peut déjà la voir. »</p><b>EXPLORER</b></article>
+<article><span>01</span><p>« Je visualise enfin ce que j'avais en tête avant de changer quoi que ce soit. »</p><b>VISUALISER</b></article>
+<article><span>02</span><p>« Voir mon propre espace dans une autre ambiance change complètement la réflexion. »</p><b>IMAGINER</b></article>
+</div>
+</section>
+
+<section class="faq container section" id="faq">
+<div class="faq-title reveal"><div class="eyebrow">FAQ</div><h2>RIEN DE<br><span>COMPLIQUÉ.</span></h2></div>
+<div class="faq-list reveal">
+<details open><summary><span>Comment fonctionne Homely ?</span><b>+</b></summary><p>Tu pars d'une photo de ton espace et tu explores différentes directions pour rendre ton idée plus concrète visuellement.</p></details>
+<details><summary><span>Je peux explorer plusieurs styles ?</span><b>+</b></summary><p>Oui. Tu peux tester différentes directions pour trouver celle qui correspond le mieux à ce que tu imagines.</p></details>
+<details><summary><span>Ça fonctionne aussi sur mobile ?</span><b>+</b></summary><p>Oui, Homely est pensé pour être utilisé aussi bien sur téléphone que sur ordinateur.</p></details>
+</div>
+</section>
+
+<section class="final-homely reveal">
+<div class="final-pattern"><span>H</span><span>O</span><span>M</span><span>E</span><span>L</span><span>Y</span></div>
+<div class="final-glow"></div>
+<div class="final-inner container">
+<div class="eyebrow">TON ESPACE · TA VISION</div>
+<h2>VOIS CE QUE<br><span>TU IMAGINES.</span></h2>
+<p>Commence avec ton espace. Laisse ton idée prendre forme.</p>
+<a class="final-button" href="https://apphomely.vercel.app/">Commencer maintenant <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+</section>
 </main>
 
-<footer class="footer"><div class="container footer-top"><div><a class="logo" href="#"><span class="logo-mark"></span><span>homely</span></a><p>Une nouvelle façon d’explorer et de visualiser ton intérieur.</p></div><div><h4>Homely</h4><a href="#compare">Avant / Après</a><a href="#reviews">Avis</a><a href="#faq">FAQ</a></div></div><div class="footer-word">HOMELY</div></footer>
+<footer class="footer">
+<div class="container footer-top"><div><a class="logo" href="#"><span class="logo-mark"></span><span>homely</span></a><p>Une nouvelle façon de visualiser ce que ton intérieur peut devenir.</p></div><div class="footer-links"><a href="#compare">Avant / Après</a><a href="#reviews">Avis</a><a href="#faq">FAQ</a></div></div>
+<div class="footer-word">HOMELY</div>
+</footer>
 <script src="script.js"></script>
 </body></html>
