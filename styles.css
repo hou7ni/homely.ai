@@ -19,3 +19,16 @@
 .photo-card{filter:brightness(.78) saturate(1.05) contrast(1.02)!important}
 .photo-card:after{background:linear-gradient(180deg,rgba(5,5,8,.02),rgba(5,5,8,.22)),linear-gradient(135deg,rgba(239,77,141,.025),transparent 55%)!important}
 .wall-overlay{background:radial-gradient(circle at center,rgba(8,8,10,.82) 0 20%,rgba(8,8,10,.12) 55%,rgba(8,8,10,.52) 100%),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.32))}
+
+
+/* Real room transformation: same room, empty before / fully styled after */
+.interactive-compare{background:#151218;min-height:560px;overflow:hidden}
+.room-photo{position:absolute;inset:0;background-size:cover;background-position:center}
+.before-photo{background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90')}
+.after-photo{background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=90')}
+.compare-before,.compare-after{position:absolute;inset:0;overflow:hidden}
+.compare-after{z-index:1}.compare-before{z-index:2;width:48%;border-right:1px solid rgba(255,255,255,.5)}
+.compare-before .room-photo{width:calc(100vw - 8vw);max-width:1320px}
+.compare-range{z-index:4}.compare-handle{z-index:5}.before-label,.after-label{z-index:6}
+.before-label,.after-label{backdrop-filter:blur(12px);background:rgba(10,8,12,.5);border:1px solid rgba(255,255,255,.16)}
+@media(max-width:700px){.interactive-compare{min-height:420px}.compare-before .room-photo{width:100vw}}
